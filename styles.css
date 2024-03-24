@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+select, input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#country-info {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#country-info img {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+#converted {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+
+.country-info-box {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.country-info-box h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.country-info-box p {
+    margin: 5px 0;
+}
+
+/* Estilos para dispositivos de tela pequena (celulares) */
+@media only screen and (max-width: 600px) {
+    .container {
+        max-width: 100%;
+        margin: 0;
+        padding: 10px;
+    }
+
+    select, input {
+        width: calc(100% - 20px);
+        margin: 5px 0;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    #country-info img {
+        max-width: 80px;
+    }
+}
