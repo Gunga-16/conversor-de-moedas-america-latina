@@ -103,11 +103,20 @@ button:hover {
     }
 }
 
-#gallery {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
+.gallery {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#coinImage {
+    max-width: 300px;
+    margin: 20px auto;
+    display: block;
 }
 
 #prevButton,
@@ -118,10 +127,5 @@ button:hover {
     font-size: 24px;
     padding: 10px;
     cursor: pointer;
-}
-
-#coinImage {
-    max-width: 1000px;
-    margin: 0 100px;
 }
 
