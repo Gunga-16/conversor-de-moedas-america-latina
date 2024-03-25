@@ -263,27 +263,28 @@ updateCountry();
 updateCountryDropdown();
 
 const coinImages = {
-    argentina: 'argentina_coin.jpg',
-    haiti: 'haiti_coin.jpg',
-    bolivia: 'bolivia_coin.jpg',
-    honduras: 'honduras_coin.jpg',
-    brasil: 'brasil_coin.jpg',
-    mexico: 'mexico_coin.jpg',
-    chile: 'chile_coin.jpg',
-    nicaragua: 'nicaragua_coin.jpg',
-    colombia: 'colombia_coin.jpg',
-    panama: 'panama_coin.jpg',
-    'costa rica': 'costa_rica_coin.jpg',
-    paraguai: 'paraguai_coin.jpg',
-    cuba: 'cuba_coin.jpg',
-    peru: 'peru_coin.jpg',
-    equador: 'equador_coin.jpg',
-    'república dominicana': 'republica_dominicana_coin.jpg',
-    'el salvador': 'el_salvador_coin.jpg',
-    uruguai: 'uruguai_coin.jpg',
-    guatemala: 'guatemala_coin.jpg',
-    venezuela: 'venezuela_coin.jpg'
+    argentina: 'img-moedas/argentina_moeda.jfif',
+    haiti: 'img-moedas/haiti_moeda.jfif',
+    bolivia: 'img-moedas/bolivia_moeda.jfif',
+    honduras: 'img-moedas/honduras_moeda.jfif',
+    brasil: 'img-moedas/brasil_moeda.jpeg',
+    mexico: 'img-moedas/mexico_moeda.jfif',
+    chile: 'img-moedas/chile_moeda.jfif',
+    nicaragua: 'img-moedas/nicaragua_moeda.jfif',
+    colombia: 'img-moedas/colombia_moeda.jfif',
+    panama: 'img-moedas/panama_moeda.jfif',
+    'costa rica': 'img-moedas/costa-rica_moeda.jfif',
+    paraguai: 'img-moedas/paraguai_moeda.jfif',
+    cuba: 'img-moedas/cuba_moeda.jfif',
+    peru: 'img-moedas/peru_moeda.jfif',
+    equador: 'img-moedas/equador_moeda.jfif',
+    'república dominicana': 'img-moedas/republica-dominicana_moeda.jfif',
+    'el salvador': 'img-moedas/el-salvador_moeda.jfif',
+    uruguai: 'img-moedas/uruguai_moeda.jfif',
+    guatemala: 'img-moedas/guatemala_moeda.jfif',
+    venezuela: 'img-moedas/venezuela_moeda.jfif'
 };
+
 
 let currentCoinIndex = 0;
 const coinKeys = Object.keys(coinImages);
