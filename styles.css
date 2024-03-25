@@ -141,3 +141,29 @@ button:hover {
     right: 10px; /* Posiciona o botão direito a 10px da direita */
 }
 
+/* Estilos para dispositivos de tela pequena (celulares) */
+@media only screen and (max-width: 600px) {
+    .gallery {
+        padding: 10px;
+    }
+
+    #coinImage {
+        max-width: 100%;
+        height: auto;
+    }
+
+    #prevButton,
+    #nextButton {
+        font-size: 20px;
+        padding: 8px;
+        top: 50%;
+    }
+
+    #prevButton {
+        left: 5px;
+    }
+
+    #nextButton {
+        right: 5px;
+    }
+}
