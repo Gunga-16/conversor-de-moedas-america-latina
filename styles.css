@@ -104,7 +104,7 @@ button:hover {
 }
 
 .gallery {
-    width: 1000px;
+    width: 800px;
     margin: 20px auto;
     padding: 20px;
     background-color: #fff;
@@ -115,7 +115,7 @@ button:hover {
 }
 
 #coinImage {
-    width: 1000px;
+    width: 800px;
     margin: 20px auto;
     display: block;
 }
