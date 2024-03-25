@@ -261,3 +261,46 @@ function updateCountryDropdown() {
 updateCountry();
 // Chame a função updateCountryDropdown após adicionar todas as opções iniciais
 updateCountryDropdown();
+
+const coinImages = {
+    argentina: 'argentina_coin.jpg',
+    haiti: 'haiti_coin.jpg',
+    bolivia: 'bolivia_coin.jpg',
+    honduras: 'honduras_coin.jpg',
+    brasil: 'brasil_coin.jpg',
+    mexico: 'mexico_coin.jpg',
+    chile: 'chile_coin.jpg',
+    nicaragua: 'nicaragua_coin.jpg',
+    colombia: 'colombia_coin.jpg',
+    panama: 'panama_coin.jpg',
+    'costa rica': 'costa_rica_coin.jpg',
+    paraguai: 'paraguai_coin.jpg',
+    cuba: 'cuba_coin.jpg',
+    peru: 'peru_coin.jpg',
+    equador: 'equador_coin.jpg',
+    'república dominicana': 'republica_dominicana_coin.jpg',
+    'el salvador': 'el_salvador_coin.jpg',
+    uruguai: 'uruguai_coin.jpg',
+    guatemala: 'guatemala_coin.jpg',
+    venezuela: 'venezuela_coin.jpg'
+};
+
+let currentCoinIndex = 0;
+const coinKeys = Object.keys(coinImages);
+
+function updateCoinImage() {
+    const selectedCountry = document.getElementById('country').value;
+    const coinImage = document.getElementById('coinImage');
+    coinImage.src = coinImages[selectedCountry];
+    currentCoinIndex = coinKeys.indexOf(selectedCountry);
+}
+
+function prevCoin() {
+    currentCoinIndex = (currentCoinIndex - 1 + coinKeys.length) % coinKeys.length;
+    updateCoinImage();
+}
+
+function nextCoin() {
+    currentCoinIndex = (currentCoinIndex + 1) % coinKeys.length;
+    updateCoinImage();
+}

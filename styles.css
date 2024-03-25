@@ -102,3 +102,26 @@ button:hover {
         max-width: 80px;
     }
 }
+
+#gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#prevButton,
+#nextButton {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#coinImage {
+    max-width: 200px;
+    margin: 0 20px;
+}
+
