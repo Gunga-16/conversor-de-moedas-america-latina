@@ -120,27 +120,6 @@ button:hover {
     display: block;
 }
 
-#prevButton,
-#nextButton {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    font-size: 24px;
-    padding: 10px;
-    cursor: pointer;
-    position: absolute; /* Adiciona posição absoluta para posicionar os botões */
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-#prevButton {
-    left: 10px; /* Posiciona o botão esquerdo a 10px da esquerda */
-}
-
-#nextButton {
-    right: 10px; /* Posiciona o botão direito a 10px da direita */
-}
-
 /* Estilos para dispositivos de tela pequena (celulares) */
 @media only screen and (max-width: 600px) {
     .gallery {
@@ -152,26 +131,6 @@ button:hover {
         max-width: 100%;
         height: auto;
         margin-bottom: 10px;
-    }
-
-    #prevButton,
-    #nextButton {
-        font-size: 20px;
-        padding: 8px;
-        background-color: rgba(0, 0, 0, 0.5);
-        color: white;
-        border: none;
-        cursor: pointer;
-    }
-
-    #prevButton {
-        float: left;
-        margin-left: 10px;
-    }
-
-    #nextButton {
-        float: right;
-        margin-right: 10px;
     }
 }
 

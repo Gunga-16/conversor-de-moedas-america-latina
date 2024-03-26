@@ -153,6 +153,8 @@ function updateCountry() {
             <p>${populacao}</p>
         </div>
     `;
+
+    updateCoinImage();
 }
 
 async function converter() {
@@ -285,23 +287,8 @@ const coinImages = {
     venezuela: 'img-moedas/venezuela_moeda.jfif'
 };
 
-
-let currentCoinIndex = 0;
-const coinKeys = Object.keys(coinImages);
-
 function updateCoinImage() {
     const selectedCountry = document.getElementById('country').value;
     const coinImage = document.getElementById('coinImage');
     coinImage.src = coinImages[selectedCountry];
-    currentCoinIndex = coinKeys.indexOf(selectedCountry);
-}
-
-function prevCoin() {
-    currentCoinIndex = (currentCoinIndex - 1 + coinKeys.length) % coinKeys.length;
-    updateCoinImage();
-}
-
-function nextCoin() {
-    currentCoinIndex = (currentCoinIndex + 1) % coinKeys.length;
-    updateCoinImage();
 }
