@@ -158,7 +158,6 @@ button:hover {
     #nextButton {
         font-size: 20px;
         padding: 8px;
-        margin-top: -40px;
         background-color: rgba(0, 0, 0, 0.5);
         color: white;
         border: none;
