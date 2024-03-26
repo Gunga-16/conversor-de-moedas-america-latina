@@ -61,7 +61,7 @@ const countriesInfo = {
         fonteEconomia: 'Logística, turismo, serviços e comércio',
         populacao: '4,43 milhões'
     },
-    'costa rica': {
+    'costa-rica': {
         pib: 'US$ 61,5 bilhões',
         lingua: 'Espanhol',
         fonteEconomia: 'Turismo, eletrônicos, software e agricultura',
@@ -91,13 +91,13 @@ const countriesInfo = {
         fonteEconomia: 'Petróleo, banana, camarão e flores',
         populacao: '17,64 milhões'
     },
-    'república dominicana': {
+    'república-dominicana': {
         pib: 'US$ 90,5 bilhões',
         lingua: 'Espanhol',
         fonteEconomia: 'Turismo, agricultura, mineração e serviços',
         populacao: '10,85 milhões'
     },
-    'el salvador': {
+    'el-salvador': {
         pib: 'US$ 53,73 bilhões',
         lingua: 'Espanhol',
         fonteEconomia: 'Serviços, indústria, comércio e agricultura',
