@@ -216,7 +216,7 @@ async function converter() {
                 selectedCurrency = 'DOP';
                 break;
             case 'el-salvador':
-                selectedCurrency = 'BTC';
+                selectedCurrency = 'svc';
                 break;
             case 'uruguai':
                 selectedCurrency = 'UYU';
