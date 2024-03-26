@@ -232,13 +232,6 @@ async function converter() {
                 throw new Error(`Moeda não suportada: ${selectedCountry}`);
         }
 
-        const bitcoinResponse = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=svc');
-        const bitcoinData = await bitcoinResponse.json();
-        const bitcoinPriceSVC = bitcoinData.bitcoin.svc;
-    
-        const convertedValue = (inputValue / bitcoinPriceSVC).toFixed(8); // Convert Reais to Bitcoin with 8 decimal places
-        document.getElementById('converted').innerText = `Valor convertido: ${convertedValue} BTC`;
-
         const rate = data.rates[selectedCurrency];
         if (!rate) {
             throw new Error(`Taxa de câmbio para ${selectedCurrency} não encontrada.`);
@@ -255,6 +248,13 @@ async function converter() {
         const convertedElement = document.getElementById('converted');
         convertedElement.innerText = 'Erro ao converter. Por favor, tente novamente mais tarde.';
     }
+
+    const bitcoinResponse = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=svc');
+        const bitcoinData = await bitcoinResponse.json();
+        const bitcoinPriceSVC = bitcoinData.bitcoin.svc;
+    
+        const convertedValue = (inputValue / bitcoinPriceSVC).toFixed(8); // Convert Reais to Bitcoin with 8 decimal places
+        document.getElementById('converted').innerText = `Valor convertido: ${convertedValue} BTC`;
 }
 
 function updateCountryDropdown() {
