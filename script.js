@@ -153,8 +153,6 @@ function updateCountryInfo() {
             <p>${populacao}</p>
         </div>
     `;
-
-    updateCoinImage();
 }
 
 async function converter() {
@@ -199,7 +197,7 @@ async function converter() {
             case 'panama':
                 selectedCurrency = 'PAB';
                 break;
-            case 'costa rica':
+            case 'costa-rica':
                 selectedCurrency = 'CRC';
                 break;
             case 'paraguai':
@@ -214,11 +212,11 @@ async function converter() {
             case 'equador':
                 selectedCurrency = 'USD';
                 break;
-            case 'república dominicana':
+            case 'república-dominicana':
                 selectedCurrency = 'DOP';
                 break;
-            case 'el salvador':
-                selectedCurrency = 'SVC';
+            case 'el-salvador':
+                selectedCurrency = 'BTC';
                 break;
             case 'uruguai':
                 selectedCurrency = 'UYU';
@@ -263,20 +261,20 @@ const coinImages = {
     argentina: 'img-moedas/argentina_moeda.jfif',
     haiti: 'img-moedas/haiti_moeda.jfif',
     bolivia: 'img-moedas/bolivia_moeda.jfif',
-    honduras: 'img-moedas/hounduras_moeda.jfif',
+    honduras: 'img-moedas/hounduras_moedas.jfif',
     brasil: 'img-moedas/brasil_moeda.jpeg',
     mexico: 'img-moedas/mexixo_moeda.jfif',
     chile: 'img-moedas/chile_moeda.jfif',
     nicaragua: 'img-moedas/nicaragua_moeda.jfif',
     colombia: 'img-moedas/colombia_moeda.jfif',
     panama: 'img-moedas/panama_moeda.jfif',
-    'costa rica': 'img-moedas/costa-rica_moeda.jfif',
+    'costa-rica': 'img-moedas/costa-rica_moeda.jfif',
     paraguai: 'img-moedas/paraguai_moeda.jfif',
     cuba: 'img-moedas/cuba_moeda.jfif',
     peru: 'img-moedas/peru_moeda.jfif',
     equador: 'img-moedas/equador_moeda.jfif',
-    'república dominicana': 'img-moedas/republica-dominicana_moeda.jfif',
-    'el salvador': 'img-moedas/el-salvador_moeda.jfif',
+    'república-dominicana': 'img-moedas/republica-dominicana_moeda.jfif',
+    'el-salvador': 'img-moedas/el-salvador_moeda.jfif',
     uruguai: 'img-moedas/uruguai_moeda.jfif',
     guatemala: 'img-moedas/guatemala_moeda.jfif',
     venezuela: 'img-moedas/venezuela_moeda.jfif'
