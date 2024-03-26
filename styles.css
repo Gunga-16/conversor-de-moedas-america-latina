@@ -104,7 +104,7 @@ button:hover {
 }
 
 .gallery {
-    width: 800px;
+    max-width: 800px;
     margin: 20px auto;
     padding: 20px;
     background-color: #fff;
@@ -115,7 +115,7 @@ button:hover {
 }
 
 #coinImage {
-    width: 800px;
+    max-width: 800px;
     margin: 20px auto;
     display: block;
 }
@@ -145,25 +145,34 @@ button:hover {
 @media only screen and (max-width: 600px) {
     .gallery {
         padding: 10px;
+        text-align: center;
     }
 
     #coinImage {
         max-width: 100%;
         height: auto;
+        margin-bottom: 10px;
     }
 
     #prevButton,
     #nextButton {
         font-size: 20px;
         padding: 8px;
-        top: 50%;
+        margin-top: -40px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        cursor: pointer;
     }
 
     #prevButton {
-        left: 5px;
+        float: left;
+        margin-left: 10px;
     }
 
     #nextButton {
-        right: 5px;
+        float: right;
+        margin-right: 10px;
     }
 }
+
