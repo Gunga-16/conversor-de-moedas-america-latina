@@ -123,7 +123,7 @@ const countriesInfo = {
     }
 };
 
-function updateCountry() {
+function updateCountryInfo() {
     const selectElement = document.getElementById('country');
     selectedCountry = selectElement.value;
     const countryInfo = document.getElementById('country-info');
@@ -259,11 +259,6 @@ function updateCountryDropdown() {
     options.forEach(option => selectElement.add(option));
 }
 
-
-updateCountry();
-// Chame a função updateCountryDropdown após adicionar todas as opções iniciais
-updateCountryDropdown();
-
 const coinImages = {
     argentina: 'img-moedas/argentina_moeda.jfif',
     haiti: 'img-moedas/haiti_moeda.jfif',
@@ -292,3 +287,11 @@ function updateCoinImage() {
     const coinImage = document.getElementById('coinImage');
     coinImage.src = coinImages[selectedCountry];
 }
+
+function updateCountry() {
+    updateCountryInfo();
+    updateCoinImage();
+    updateCountryDropdown();
+}
+
+updateCountry();
