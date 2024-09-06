@@ -25,7 +25,8 @@ label {
     margin-bottom: 5px;
 }
 
-select, input {
+select,
+input {
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
@@ -89,7 +90,8 @@ button:hover {
         padding: 10px;
     }
 
-    select, input {
+    select,
+    input {
         width: calc(100% - 20px);
         margin: 5px 0;
     }
@@ -111,7 +113,8 @@ button:hover {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    position: relative; /* Adiciona posição relativa para posicionar os botões */
+    position: relative;
+    /* Adiciona posição relativa para posicionar os botões */
 }
 
 #coinImage {
@@ -134,3 +137,19 @@ button:hover {
     }
 }
 
+.language-selector {
+    text-align: right;
+    margin: 10px;
+}
+
+.language-selector button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.language-selector img {
+    width: 30px;
+    height: auto;
+}
