@@ -1,4 +1,4 @@
-import * as dados from 'dados.js';
+import  {countriesInfo, coinImages, translations} from './dados.js';
 
 let selectedCountry = 'argentina';
 
