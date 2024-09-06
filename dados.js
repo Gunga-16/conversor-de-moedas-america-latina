@@ -165,4 +165,3 @@ const translations = {
     }
 };
 
-export {countriesInfo, coinImages, translations};
