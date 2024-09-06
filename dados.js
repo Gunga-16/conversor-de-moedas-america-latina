@@ -1,5 +1,5 @@
 
-export const countriesInfo = {
+const countriesInfo = {
     argentina: {
         pib: 'US$ 487,2 bilhões (2021)',
         lingua: 'Espanhol',
@@ -123,7 +123,7 @@ export const countriesInfo = {
 };
 
 
-export const coinImages = {
+const coinImages = {
     argentina: 'img-moedas/argentina_moeda.jfif',
     haiti: 'img-moedas/haiti_moeda.jfif',
     bolivia: 'img-moedas/bolivia_moeda.jfif',
@@ -146,7 +146,7 @@ export const coinImages = {
     venezuela: 'img-moedas/venezuela_moeda.jfif'
 };
 
-export const translations = {
+const translations = {
     pt: {
         title: 'Conversor de Moedas',
         selectCountryLabel: 'Selecione o país:',
