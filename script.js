@@ -1,3 +1,5 @@
+import * as dados from 'dados.js';
+
 let selectedCountry = 'argentina';
 
 
