@@ -164,3 +164,5 @@ const translations = {
         countryNotFound: 'Información no encontrada para el país seleccionado.'
     }
 };
+
+export {countriesInfo, coinImages, translations};
