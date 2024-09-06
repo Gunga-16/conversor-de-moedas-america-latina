@@ -159,12 +159,12 @@ async function converter() {
     const reaisInput = document.getElementById('reais');
     const reaisValue = parseFloat(reaisInput.value);
     console.log('Valor em reais:', reaisValue);
-    
+
     try {
         const response = await fetch(`https://api.exchangerate-api.com/v4/latest/BRL`);
         const data = await response.json();
         console.log('Taxas de câmbio:', data.rates);
-        
+
         let selectedCurrency = '';
         switch (selectedCountry) {
             case 'argentina':
@@ -236,10 +236,10 @@ async function converter() {
             throw new Error(`Taxa de câmbio para ${selectedCurrency} não encontrada.`);
         }
         console.log('Taxa de câmbio:', rate);
-        
+
         const convertedValue = (reaisValue * rate).toFixed(2);
         console.log('Valor convertido:', convertedValue);
-        
+
         const convertedElement = document.getElementById('converted');
         convertedElement.innerText = `Valor convertido: ${convertedValue} ${selectedCurrency.toUpperCase()}`;
     } catch (error) {
@@ -295,42 +295,42 @@ function updateCountry() {
 updateCountry();
 
 const translations = {
-        pt: {
-            title: 'Conversor de Moedas',
-            selectCountryLabel: 'Selecione o país:',
-            labelReais: 'Valor em Reais:',
-            convertBtn: 'Converter',
-            galleryTitle: 'Galeria de Moedas',
-            countryNotFound: 'Informações não encontradas para o país selecionado.'
-        },
-        es: {
-            title: 'Convertidor de Monedas',
-            selectCountryLabel: 'Seleccione el país:',
-            labelReais: 'Valor en Reales:',
-            convertBtn: 'Convertir',
-            galleryTitle: 'Galería de Monedas',
-            countryNotFound: 'Información no encontrada para el país seleccionado.'
-        }
-    };
-    
-    function changeLanguage(language) {
-        document.getElementById('title').textContent = translations[language].title;
-        document.getElementById('select-country-label').textContent = translations[language].selectCountryLabel;
-        document.getElementById('label-reais').textContent = translations[language].labelReais;
-        document.getElementById('convert-btn').textContent = translations[language].convertBtn;
-        document.getElementById('gallery-title').textContent = translations[language].galleryTitle;
-        updateCountryInfo(language);
+    pt: {
+        title: 'Conversor de Moedas',
+        selectCountryLabel: 'Selecione o país:',
+        labelReais: 'Valor em Reais:',
+        convertBtn: 'Converter',
+        galleryTitle: 'Galeria de Moedas',
+        countryNotFound: 'Informações não encontradas para o país selecionado.'
+    },
+    es: {
+        title: 'Convertidor de Monedas',
+        selectCountryLabel: 'Seleccione el país:',
+        labelReais: 'Valor en Reales:',
+        convertBtn: 'Convertir',
+        galleryTitle: 'Galería de Monedas',
+        countryNotFound: 'Información no encontrada para el país seleccionado.'
     }
-    
-    function updateCountryInfo(language) {
-        const countryInfo = document.getElementById('country-info');
-        const countryData = countriesInfo[selectedCountry];
-        if (!countryData) {
-            countryInfo.innerHTML = translations[language].countryNotFound;
-            return;
-        }
-        const { pib, lingua, fonteEconomia, populacao } = countryData;
-        countryInfo.innerHTML = `
+};
+
+function changeLanguage(language) {
+    document.getElementById('title').textContent = translations[language].title;
+    document.getElementById('select-country-label').textContent = translations[language].selectCountryLabel;
+    document.getElementById('label-reais').textContent = translations[language].labelReais;
+    document.getElementById('convert-btn').textContent = translations[language].convertBtn;
+    document.getElementById('gallery-title').textContent = translations[language].galleryTitle;
+    updateCountryInfo(language);
+}
+
+function updateCountryInfo(language) {
+    const countryInfo = document.getElementById('country-info');
+    const countryData = countriesInfo[selectedCountry];
+    if (!countryData) {
+        countryInfo.innerHTML = translations[language].countryNotFound;
+        return;
+    }
+    const { pib, lingua, fonteEconomia, populacao } = countryData;
+    countryInfo.innerHTML = `
             <img src="img/${selectedCountry}.png" alt="${selectedCountry}">
             <h2>${selectedCountry[0].toUpperCase() + selectedCountry.slice(1)}</h2>
             <div class="country-info-box">
@@ -350,5 +350,4 @@ const translations = {
                 <p>${populacao}</p>
             </div>
         `;
-    }
-    
+}
