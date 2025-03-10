@@ -100,21 +100,25 @@ button:hover {
     display: block;
 }
 
-.wrapper {
+.main-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items:flex-start;
 }
 
 /* Estilos para dispositivos celulares */
 @media only screen and (min-width: 768px) {
-    .wrapper {
+    .main-container {
         flex-direction: row;
         justify-content: center;
         gap: 20px;
     }
-    .container, .gallery {
+    .gallery {
         width: 45%;
+    }
+
+    .container {
+        max-width: 300px;
     }
 
     select,
