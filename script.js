@@ -136,6 +136,7 @@ function updateCountryInfo() {
     countryInfo.innerHTML = `
         <img src="img/${selectedCountry}.png" alt="${selectedCountry}">
         <h2>${selectedCountry[0].toUpperCase() + selectedCountry.slice(1)}</h2>
+        <div class="country-info-grid">
         <div class="country-info-box">
             <h3>PIB</h3>
             <p>${pib}</p>
@@ -151,6 +152,7 @@ function updateCountryInfo() {
         <div class="country-info-box">
             <h3>População</h3>
             <p>${populacao}</p>
+        </div>
         </div>
     `;
 
