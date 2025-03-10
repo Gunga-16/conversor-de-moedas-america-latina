@@ -114,12 +114,14 @@ button:hover {
 /* Estilos para dispositivos celulares */
 @media only screen and (max-width: 768px) {
     .main-container {
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         gap: 20px;
+        align-items: center;
     }
+
     .gallery, .container {
-        width: 45%;
+        width: 85%;
     }
 
     select,
@@ -134,6 +136,10 @@ button:hover {
 
     #country-info img {
         max-width: 80px;
+    }
+
+    .country-info-grid {
+        display: block;
     }
 
     #coinImage {
