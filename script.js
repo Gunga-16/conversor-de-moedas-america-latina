@@ -293,3 +293,5 @@ function updateCountry() {
     updateCoinImage();
     updateCountryDropdown();
 }
+
+updateCountry();
