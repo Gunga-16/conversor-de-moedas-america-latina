@@ -6,8 +6,8 @@ body {
 }
 
 .container {
-    max-width: 600px;
-    margin: 20px auto;
+    width: 70%;
+    margin: 20px;
     padding: 20px;
     background-color: #fff;
     border-radius: 5px;
@@ -27,7 +27,7 @@ label {
 
 select,
 input {
-    width: 100%;
+    width: 70%;
     padding: 8px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
@@ -69,6 +69,7 @@ button:hover {
 }
 
 .country-info-box {
+    width: 24%;
     background-color: #f9f9f9;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -110,18 +111,14 @@ button:hover {
 }
 
 /* Estilos para dispositivos celulares */
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
     .main-container {
         flex-direction: row;
         justify-content: center;
         gap: 20px;
     }
-    .gallery {
+    .gallery, .container {
         width: 45%;
-    }
-
-    .container {
-        max-width: 300px;
     }
 
     select,
