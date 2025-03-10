@@ -142,6 +142,10 @@ button:hover {
         display: block;
     }
 
+    .country-info-box {
+        width: 50%;
+    }
+
     #coinImage {
         max-width: 100%;
         height: auto;
