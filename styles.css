@@ -25,7 +25,8 @@ label {
     margin-bottom: 5px;
 }
 
-select, input {
+select,
+input {
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
@@ -81,15 +82,43 @@ button:hover {
     margin: 5px 0;
 }
 
-/* Estilos para dispositivos de tela pequena (celulares) */
-@media only screen and (max-width: 600px) {
-    .container {
-        max-width: 100%;
-        margin: 0;
-        padding: 10px;
+.gallery {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    /* Adiciona posição relativa para posicionar os botões */
+}
+
+#coinImage {
+    max-width: 800px;
+    margin: 20px auto;
+    display: block;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos para dispositivos celulares */
+@media only screen and (min-width: 768px) {
+    .wrapper {
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+    .container, .gallery {
+        width: 45%;
     }
 
-    select, input {
+    select,
+    input {
         width: calc(100% - 20px);
         margin: 5px 0;
     }
@@ -100,31 +129,6 @@ button:hover {
 
     #country-info img {
         max-width: 80px;
-    }
-}
-
-.gallery {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    position: relative; /* Adiciona posição relativa para posicionar os botões */
-}
-
-#coinImage {
-    max-width: 800px;
-    margin: 20px auto;
-    display: block;
-}
-
-/* Estilos para dispositivos de tela pequena (celulares) */
-@media only screen and (max-width: 600px) {
-    .gallery {
-        padding: 10px;
-        text-align: center;
     }
 
     #coinImage {

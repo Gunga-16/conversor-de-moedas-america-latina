@@ -10,40 +10,42 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Conversor de Moedas</h1>
-        <label for="country">Selecione o país:</label>
-        <select id="country" onchange="updateCountry()">
-            <option value="argentina">Argentina</option>
-            <option value="haiti">Haiti</option>
-            <option value="bolivia">Bolívia</option>
-            <option value="honduras">Honduras</option>
-            <option value="brasil">Brasil</option>
-            <option value="mexico">México</option>
-            <option value="chile">Chile</option>
-            <option value="nicaragua">Nicarágua</option>
-            <option value="colombia">Colômbia</option>
-            <option value="panama">Panamá</option>
-            <option value="costa-rica">Costa Rica</option>
-            <option value="paraguai">Paraguai</option>
-            <option value="cuba">Cuba</option>
-            <option value="peru">Peru</option>
-            <option value="equador">Equador</option>
-            <option value="república-dominicana">República Dominicana</option>
-            <option value="el-salvador">El Salvador</option>
-            <option value="uruguai">Uruguai</option>
-            <option value="guatemala">Guatemala</option>
-            <option value="venezuela">Venezuela</option>
-        </select>
-        <div class="country-info" id="country-info"></div>
-        <label for="reais">Valor em Reais:</label>
-        <input type="number" id="reais">
-        <button onclick="converter()">Converter</button>
-        <p id="converted"></p>
-    </div> 
-    <div class="gallery">
-        <h1>Galeria de Moedas</h1>
-        <img id="coinImage" src="" alt="Moeda">
+    <div class="wrapper"> <!-- Novo wrapper para controle do layout -->
+        <div class="container">
+            <h1>Conversor de Moedas</h1>
+            <label for="country">Selecione o país:</label>
+            <select id="country" onchange="updateCountry()">
+                <option value="argentina">Argentina</option>
+                <option value="haiti">Haiti</option>
+                <option value="bolivia">Bolívia</option>
+                <option value="honduras">Honduras</option>
+                <option value="brasil">Brasil</option>
+                <option value="mexico">México</option>
+                <option value="chile">Chile</option>
+                <option value="nicaragua">Nicarágua</option>
+                <option value="colombia">Colômbia</option>
+                <option value="panama">Panamá</option>
+                <option value="costa-rica">Costa Rica</option>
+                <option value="paraguai">Paraguai</option>
+                <option value="cuba">Cuba</option>
+                <option value="peru">Peru</option>
+                <option value="equador">Equador</option>
+                <option value="república-dominicana">República Dominicana</option>
+                <option value="el-salvador">El Salvador</option>
+                <option value="uruguai">Uruguai</option>
+                <option value="guatemala">Guatemala</option>
+                <option value="venezuela">Venezuela</option>
+            </select>
+            <div class="country-info" id="country-info"></div>
+            <label for="reais">Valor em Reais:</label>
+            <input type="number" id="reais">
+            <button onclick="converter()">Converter</button>
+            <p id="converted"></p>
+        </div> 
+        <div class="gallery">
+            <h1>Galeria de Moedas</h1>
+            <img id="coinImage" src="" alt="Moeda">
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
