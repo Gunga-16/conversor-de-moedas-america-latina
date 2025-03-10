@@ -1,69 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-       
     <meta charset="UTF-8">
-       
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-       
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Conversor de Moedas</title>
-       
+    <title>Conversor de Moedas</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-        <div class="container">
-
-                <div class="language-selector">
-                    <button id="btn-pt" onclick="changeLanguage('pt')">
-                          <img src="#" alt="Português" width="30">
-                        </button>
-                    <button id="btn-es" onclick="changeLanguage('es')">
-                            <img src="#" alt="Español" width="30">
-                        </button>
-                </div>
-
-                <h1 id="title">Conversor de Moedas</h1>
-                <label id="select-country-label" for="country">Selecione o país:</label>
-                <select id="country" onchange="updateCountryInfo()">
-                        <option value="argentina">Argentina</option>
-                        <option value="haiti">Haiti</option>
-                        <option value="bolivia">Bolívia</option>
-                        <option value="honduras">Honduras</option>
-                        <option value="brasil">Brasil</option>
-                        <option value="mexico">México</option>
-                        <option value="chile">Chile</option>
-                        <option value="nicaragua">Nicarágua</option>
-                        <option value="colombia">Colômbia</option>
-                        <option value="panama">Panamá</option>
-                        <option value="costa-rica">Costa Rica</option>
-                        <option value="paraguai">Paraguai</option>
-                        <option value="cuba">Cuba</option>
-                        <option value="peru">Peru</option>
-                        <option value="equador">Equador</option>
-                        <option value="república-dominicana">República Dominicana</option>
-                        <option value="el-salvador">El Salvador</option>
-                        <option value="uruguai">Uruguai</option>
-                        <option value="guatemala">Guatemala</option>
-                        <option value="venezuela">Venezuela</option>
-                    </select>
-                <div class="country-info" id="country-info"></div>
-                <label id="label-reais" for="reais">Valor em Reais:</label>
-                <input type="number" id="reais">
-                <button id="convert-btn" onclick="converter()">Converter</button>
-                <p id="converted"></p>
-           
+    <div class="container">
+        <h1>Conversor de Moedas</h1>
+        <label for="country">Selecione o país:</label>
+        <select id="country" onchange="updateCountry()">
+            <option value="argentina">Argentina</option>
+            <option value="haiti">Haiti</option>
+            <option value="bolivia">Bolívia</option>
+            <option value="honduras">Honduras</option>
+            <option value="brasil">Brasil</option>
+            <option value="mexico">México</option>
+            <option value="chile">Chile</option>
+            <option value="nicaragua">Nicarágua</option>
+            <option value="colombia">Colômbia</option>
+            <option value="panama">Panamá</option>
+            <option value="costa-rica">Costa Rica</option>
+            <option value="paraguai">Paraguai</option>
+            <option value="cuba">Cuba</option>
+            <option value="peru">Peru</option>
+            <option value="equador">Equador</option>
+            <option value="república-dominicana">República Dominicana</option>
+            <option value="el-salvador">El Salvador</option>
+            <option value="uruguai">Uruguai</option>
+            <option value="guatemala">Guatemala</option>
+            <option value="venezuela">Venezuela</option>
+        </select>
+        <div class="country-info" id="country-info"></div>
+        <label for="reais">Valor em Reais:</label>
+        <input type="number" id="reais">
+        <button onclick="converter()">Converter</button>
+        <p id="converted"></p>
+    </div> 
+    <div class="gallery">
+        <h1>Galeria de Moedas</h1>
+        <img id="coinImage" src="" alt="Moeda">
     </div>
-        <div class="gallery">
-                <h1 id="gallery-title">Galeria de Moedas</h1>
-                <img id="coinImage" src="" alt="Moeda">
-            </div>
-    
-    <script type="module" src="dados.js"></script>    
     <script src="script.js"></script>
-    
 </body>
-
 </html>
