@@ -140,10 +140,11 @@ button:hover {
 
     .country-info-grid {
         display: block;
+        justify-items: center;
     }
 
     .country-info-box {
-        width: 50%;
+        width: 85%;
     }
 
     #coinImage {
