@@ -120,13 +120,12 @@ button:hover {
         align-items: center;
     }
 
-    .container {
+    .container, .gallery {
         width: 85%;
     }
  
     .gallery {
         justify-items: center;
-        width: 60%;
     }
 
     select,
