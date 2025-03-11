@@ -125,21 +125,22 @@ button:hover {
     }
  
     .gallery {
+        justify-items: center;
         width: 60%;
     }
 
     select,
     input {
-        width: calc(100% - 20px);
+        width: 50%;
         margin: 5px 0;
     }
 
     button {
-        width: 100%;
+        width: 20%;
     }
 
     #country-info img {
-        max-width: 80px;
+        width: 25%;
     }
 
     .country-info-grid {
@@ -152,7 +153,7 @@ button:hover {
     }
 
     #coinImage {
-        width: 40%;
+        width: 70%;
         height: auto;
         margin-bottom: 10px;
     }
