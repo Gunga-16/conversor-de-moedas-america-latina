@@ -111,7 +111,51 @@ button:hover {
     align-items: center;
 }
 
-/* Estilos para dispositivos celulares */
+/* Estilos para celulares */
+@media only screen and (max-width: 1180px) {
+    .main-container {
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .gallery, .container {
+        width: 85%;
+    }
+
+    select,
+    input {
+        width: calc(100% - 20px);
+        margin: 5px 0;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    #country-info img {
+        max-width: 80px;
+    }
+
+    .country-info-grid {
+        display: block;
+        justify-items: center;
+    }
+
+    .country-info-box {
+        width: 85%;
+    }
+
+    #coinImage {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+}
+
+
+/* Estilos para celulares */
 @media only screen and (max-width: 768px) {
     .main-container {
         flex-direction: column;
